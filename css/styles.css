@@ -42,18 +42,31 @@ section {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
 }
 
 section.hero {
     width: 100%;
     height: 100%;
-    
+
 }
 
+.section__header {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    color: #29374E;
+    line-height: 130%;
+    margin: 135px 135px 40px;
+    padding: 5px 50px;
+}
+.section__header .colored {
+    color: #0962E8;
+}
 .hero__wrap {
     width: 100%;
     height: 100%;
-    height: 678px; 
+    /* height: 678px; */
     z-index: 0;
     background-color: #CBECFF;
 }
@@ -213,11 +226,11 @@ section.hero {
     align-items: flex-start; /* Выравнивание по верхнему краю */
     max-width: 241px; /* Максимальная ширина как в требовании */
     padding: 16px;
-    background: #f8f9fa; /* Пример фона, можно изменить */
+    background: #f8f9fa;
     border-radius: 8px;
     box-shadow: 6px 4px 12px 0px #0000000D;
     flex: 1 1 calc(25% - 20px); /* 4 колонки с учетом gap */
-    min-width: 180px; /* Минимальная ширина для адаптивности */
+    min-width: 180px;
 }
 
 .advantages__text {
@@ -235,7 +248,7 @@ section.hero {
     display: flex;
     align-items: center; /* Иконка прижимается к верху */
     justify-content: center; /* Центрирование по горизонтали и вертикали */
-    width: 40px; 
+    width: 40px;
     height: 40px;
     background-color: #EFF9FF;
     border-radius: 50%;
@@ -246,6 +259,51 @@ section.hero {
     height: 24px;
     display: block;
 }
+
+/*----platforms----*/
+
+.platforms__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.platforms__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #E9F6FF;
+    padding: 37px 33px 0;
+}
+
+.platform__text {
+    font-size: 14px;
+    line-height: 140%;
+    color: #000;
+    text-align: left;
+}
+
+.platform__text .platform__header {
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.platform__picture {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    padding: 0;
+}
+
+.platform__picture img {
+    width: 100%; /* Сохраняем пропорции */
+    object-fit: contain; /* Чтобы картинка не обрезалась */
+    align-self: flex-start;
+}
+
 
 @media (max-width: 1024px) {
     .hero__content .left__side {
@@ -264,7 +322,7 @@ section.hero {
         flex-direction: column;
         justify-content: center;
     }
-    .right__side img{ 
+    .right__side img{
         position: relative;
         left: 0;
     }
